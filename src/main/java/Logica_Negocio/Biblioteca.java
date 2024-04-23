@@ -21,7 +21,7 @@ public class Biblioteca {
             for (int j = i; j > 0 && !agregado; j--) {
                 Libro uno = Lslibros.get(j);
                 Libro dos = Lslibros.get(j - 1);
-                if (uno.Nombre.compareTo(dos.Nombre) < 0) {
+                if (uno.Titulo.compareTo(dos.Titulo) < 0) {
                     Lslibros.set(j, dos);
                     Lslibros.set(j - 1, uno);
                 } else {
@@ -34,10 +34,10 @@ public class Biblioteca {
     public static void MostrarLibros(ArrayList<Libro> Lslibros) {
         System.out.println("Libros ordenados:");
         for (int i = 0; i < Lslibros.size(); i++) {
-            System.out.println("Nombre: " + Lslibros.get(i).getNombre());
-            System.out.println("Seccion: " + Lslibros.get(i).getArea());
+            System.out.println("Nombre: " + Lslibros.get(i).getTitulo());
+            System.out.println("Seccion: " + Lslibros.get(i).getSeccion());
             System.out.println("\n");
-            
+
         }
     }
 }

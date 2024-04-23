@@ -20,7 +20,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // Declaracion de variables
-        String Nombre = "";
+        String Titulo = "";
         String Seccion = "";
         int Num_libros = 0;
         ArrayList<Libro> Lslibros = new ArrayList<>();
@@ -44,13 +44,13 @@ public class Main {
                     scan.nextLine();
 
                     for (int i = 0; i < Num_libros; i++) {
-                        System.out.println("Digite el nombre del libro " + (i + 1) + " :");
-                        Nombre = scan.nextLine();
+                        System.out.println("Digite el titulo del libro " + (i + 1) + " :");
+                        Titulo = scan.nextLine();
 
                         System.out.println("Digite la seccion a la que corresponde : ");
                         Seccion = scan.nextLine();
 
-                        Libro objLibro = new Libro(Nombre, Seccion);
+                        Libro objLibro = new Libro(Titulo, Seccion);
                         Lslibros.add(objLibro);
 
                     }

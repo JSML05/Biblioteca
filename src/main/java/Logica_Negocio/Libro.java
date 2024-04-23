@@ -11,7 +11,7 @@ package Logica_Negocio;
 public class Libro {
 
     //Declaracion de atributos
-    public String Nombre;
+    public String Titulo;
     public String Seccion;
 
     //Constructor no parametrizado
@@ -19,26 +19,26 @@ public class Libro {
     }
 
     //Constructor parametrizado
-    public Libro(String Nombre, String Seccion) {
-        this.Nombre = Nombre;
+    public Libro(String Titulo, String Seccion) {
+        this.Titulo = Titulo;
         this.Seccion = Seccion;
     }
 
     //Setters y getters
-    public String getNombre() {
-        return Nombre;
+    public String getTitulo() {
+        return Titulo;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setTitulo(String Titulo) {
+        this.Titulo = Titulo;
     }
 
-    public String getArea() {
+    public String getSeccion() {
         return Seccion;
     }
 
-    public void setArea(String Area) {
-        this.Seccion = Area;
+    public void setSeccion(String Seccion) {
+        this.Seccion = Seccion;
     }
 
 }
