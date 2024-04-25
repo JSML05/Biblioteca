@@ -33,6 +33,7 @@ public class Biblioteca {
 
     public static void MostrarLibros(ArrayList<Libro> Lslibros) {
         System.out.println("Libros ordenados:");
+        System.out.println("\n");
         for (int i = 0; i < Lslibros.size(); i++) {
             System.out.println("Titulo: " + Lslibros.get(i).getTitulo());
             System.out.println("Seccion: " + Lslibros.get(i).getSeccion());

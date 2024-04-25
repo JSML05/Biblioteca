@@ -62,9 +62,13 @@ public class Main {
                     break;
 
                 case 2:
-                    Biblioteca.ordenarPorInsercion(Lslibros);
-                    Biblioteca.MostrarLibros(Lslibros);
-
+                    if (!Lslibros.isEmpty()) {
+                        Biblioteca.ordenarPorInsercion(Lslibros);
+                        Biblioteca.MostrarLibros(Lslibros);
+                    } else {
+                        System.out.println("Las estanterias se encuentran vacias");
+                        System.out.println("\n");
+                    }
                     break;
 
                 case 3:
